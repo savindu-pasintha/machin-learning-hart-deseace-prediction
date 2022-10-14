@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style1.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Predicting Heart Disease risks for patients</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <br>
+    <a href="/" class="button_loginnn">Back to home page</a>
+    <div class="login">
+        <div class="testbox">
+            <form action="/form_to_app_py" method="POST">
+                <form action="/">
+                    <div class="banner">
+                        <h1>Predicting Heart Disease risks for patients</h1>
+                    </div>
+                    <p>Please make sure all fields are filled in correctly. Thank you!</p>
+                    <hr />
+                    <br>
+                    <fieldset>
+                        <legend>Enter Your Details</legend><br>
+                        <div class="name-item">
+                            <input class="form-input" required type="text" name="age"
+                                placeholder="Age in years when you are pregnant"><br>
+                            <input class="form-input" required type="text" name="sex"
+                                placeholder="Upper value of Blood Pressure in mmHg"><br>
+                            <input class="form-input" required type="text" name="cp"
+                                placeholder="Lower value of Blood Pressure in mmHg"><br>
+                            <input class="form-input" required type="text" name="trestbps"
+                                placeholder="Blood glucose levels is in terms of a molar concentration, mmol/L"><br>
+                            <input class="form-input" required type="text" name="chol"
+                                placeholder="Body temperature in fahrenheit"><br>
+                            <input class="form-input" required type="text" name="fbs"
+                                placeholder="Upper value of Blood Pressure in mmHg"><br>
+                            <input class="form-input" required type="text" name="restecg"
+                                placeholder="Lower value of Blood Pressure in mmHg"><br>
+                            <input class="form-input" required type="text" name="thalach"
+                                placeholder="Blood glucose levels is in terms of a molar concentration, mmol/L"><br>
+                            <input class="form-input" required type="text" name="exang"
+                                placeholder="Body temperature in fahrenheit"><br>
+                            <input class="form-input" required type="text" name="oldpeak"
+                                placeholder="Body temperature in fahrenheit"><br>
+                            <input class="form-input" required type="text" name="slope"
+                                placeholder="Upper value of Blood Pressure in mmHg"><br>
+                            <input class="form-input" required type="text" name="ca"
+                                placeholder="Lower value of Blood Pressure in mmHg"><br>
+                            <input class="form-input" required type="text" name="thal"
+                                placeholder="Blood glucose levels is in terms of a molar concentration, mmol/L"><br>
+                        </div>
+                    </fieldset>
+                    <div class="btn-block">
+                        <br> <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+                    </div>
+                </form>
+
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
